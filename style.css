@@ -206,7 +206,7 @@ iframe{
                 video{
                     position: relative;
                     top: 42%;
-                    right: -10px;
+                    right: -8px;
                     width: 700px;
                     visibility: visible;
                 }
@@ -242,8 +242,8 @@ iframe{
                 iframe{
                     position: absolute;
                
-                    right: 1%;
-                    width: 410px; 
+                    right: 0%;
+                    width: 400px; 
                     border: #286aeb; 
                     color: #d4af37;
                 }
