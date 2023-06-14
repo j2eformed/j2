@@ -137,6 +137,20 @@ iframe{
         opacity: 1s;
         transition: .7s;
         }
+        @media screen and (max-width: 360px){
+            .video{
+                visibility: visible;
+            }
+            .container{
+                visibility: visible;
+            }
+            .icon{
+                visibility: visible;
+            }
+            .email{
+                visibility: visible;
+            }
+        }
         
        
         
