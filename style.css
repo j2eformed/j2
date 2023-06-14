@@ -1,69 +1,132 @@
-html, body{
+*{
     margin: 0;
     padding: 0;
-    width: 100%;    
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+
 body{
+    background: #796a6a;
+    width: 100%;
     height: 100vh;
-    background: #151519;
+    position: relative;
 }
-button{
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50% );
+h2{
+    position: absolute;
+    top: 550px;
+    right: 50px;
+    width: 700px; 
+    border: #286aeb; 
+    padding: 10px;
+    color: #d4af37;
 }
-button{
-    background: none;
-    color: #ccc;
-    width: 240px;
-    height: 80px;
-    border: 1px solid #338033;
+p{
+    position: absolute;
+    top: 190px;
+    right: 300px;
+    width: 700px; 
+    border: #286aeb; 
+    padding: 10px;
+    color: white;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}
+video{
+    position: absolute;
+    top: 284px;
+    right: 100px;
+    width: 700px; 
+}
+iframe{
+    position: absolute;
+    top: 580px;
+    right: 300px;
+    width: 700px; 
+    border: #286aeb; 
+    padding: 10px;
+    color: #d4af37;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container h1{
+    font-size: 40px;
+    color: white;
+    margin-bottom: 20px;
+    color: #d4af37;
+}
+.container .email{
+    height: 50px;
+    position: relative;
+}
+.container .email input{
+    height: 100%;
+    width: 450px;
+    padding-left: 50px;
     font-size: 18px;
-    border-radius: 4px;
-    transition: .6s;
-    overflow: hidden;
-}
-button:focus{
     outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 50px;
+    border: 2px solid #dfaa8b;
+    background-color: #dfaa8b
 }
-button:before{
-    content: '';
-    display: block;
+.container .email .icon{
     position: absolute;
-    background: rgba(255, 255, 255, .5);
-    width: 60px;
-    height: 100%;
-    left: 0;
-    top: 0;
-    opacity: .5s;
-    filter: blur(30px);
-    transform: translateX(-130px) skewX(-15deg);
+    left: 25px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    color: #301934;
+
 }
-button::after{
-    content: '';
-    display: block;
+.container .email button{
     position: absolute;
-    background: rgba(255, 255, 255, .2);
-    width: 30px;
-    height: 100%;
-    left: 30px;
-    top: 0;
-    opacity: 0;
-    filter: blur(30px);
-    transform: translate(-100px) scaleX(-15deg);
+    top: 50%;
+    right: -30px;
+    transform: translate(-50%, -50%);
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 50px;
+    border: 1px solid gray;
+    outline: none;
+    background: #301934;
+    color: white;
+    transition: 0.3s;
 }
-button:hover{
+
+.container .email button:hover{
     background: #338033;
     cursor: pointer;
-}
-button:hover::before{
-    transform: translateX(300px) skewX(-15deg);
-    opacity: .6s;
-    transition: .7s;
-}
-button:hover::after{
-    transform: translateX(300px) skewX(-15deg);
-    opacity: 1;
-    transition: .7s;
-}
+    }
+    
+    .container .email button:hover{
+        background: #338033;
+        cursor: pointer;
+        }
+        
+        .container .email button:hover:before {
+        transform: translatex(300px) skewX(-15deg);
+        opacity: .6s;
+        transition: .7s;
+        }
+        .container .email button:hover:after{
+        transform: translatex(300px) skewX(-15deg);
+        opacity: 1s;
+        transition: .7s;
+        }
+        
+       
+        
+      
