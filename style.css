@@ -35,9 +35,20 @@ p{
     margin-left: 0;
     margin-right: 0;
 }
+form{
+    height: 100%;
+    width: 450px;
+    padding-left: 0px;
+    font-size: 18px;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 50px;
+    border: 2px solid #dfaa8b;
+    background-color: #dfaa8b
+}
 video{
     position: absolute;
-    top: 284px;
+    top: 270px;
     right: 100px;
     width: 700px; 
 }
